@@ -73,12 +73,6 @@ function writeJSON(path, object, spacing = 2) {
         if (error) return console.log(`[MKDIR]: ${error}`);
     });
 
-    // if (fs.existsSync(path + '.json')) {
-    //     let tmp = npath.basename(path);
-    //     let num = (+tmp.match(/\d+/) + 1);
-    //     path = npath.dirname(path) + '/' + tmp + num;
-    // }
-
     fs.writeFile(path + '.json', JSON.stringify(object, null, spacing), (error) => {
         if (error) {
             console.log(`[WRITE]: ${error}`);
