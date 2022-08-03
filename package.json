@@ -1,0 +1,15 @@
+{
+  "name": "papergen",
+  "version": "0.0.1",
+  "description": "Paper generator for FL",
+  "main": "papergen.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Danny",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "uuid": "^8.3.2"
+  }
+}
